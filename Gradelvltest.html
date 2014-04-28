@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+	<title> College Year </title>
+
+<style>
+</style>
+<script>
+function findGrade(){
+	var name = document.getElementById('studentName').value;
+	var credits = document.getElementById('creditAmount').value;
+	var grade ;
+		if (credits == 30) {
+		 
+		grade = "Sophmore";
+		
+		}
+		if (credits >= 60) {
+		 if (credits < 90) {
+		grade = "Junior";
+		}
+		}
+		if (credits >= 90) {
+		grade = "Senior";
+		}
+		else {
+		grade = "HAHAHA";
+		}
+		document.getElementById('target').innerText =  grade;
+		document.getElementById('target2').innerText = name;
+		}
+function test(){
+
+		document.getElementById('target').innerText= "hahahaha";
+		}
+
+</script>
+</head>
+<body>
+Name:<input id= 'studentName'/> Number of Credits: <input id= 'creditAmount'/> </br>
+<input id = 'gradeButton' onclick = 'findGrade()' value = 'Find Out!' type = 'button'/>
+<div id = 'target2'></div>
+<div id = 'target'> </div>
+
+</body>
+</html>

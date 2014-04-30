@@ -9,7 +9,7 @@
     <body>
 
         <header>
-            <h1> <!-- enter page header here --> </h1>
+            <h1> Hello!<!-- enter page header here --> </h1>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/triathlon/mods/headernav.php'; ?>
         </header>
 
